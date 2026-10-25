@@ -15,23 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shadcn-fintech.vercel.app"),
-  title: "Shadcn Fintech — Finance Dashboard Template",
-  description: "A premium open-source fintech dashboard built with Next.js, shadcn/ui, and Tailwind CSS. 13 pages, drag-and-drop layout, crypto candlestick charts, and more.",
-  openGraph: {
-    title: "Shadcn Fintech — Finance Dashboard Template",
-    description: "A premium open-source fintech dashboard built with Next.js, shadcn/ui, and Tailwind CSS.",
-    type: "website",
-    url: "https://shadcn-fintech.vercel.app",
-    images: [{ url: "/screenshots/shadcn-fintech.png", width: 1200, height: 630 }],
+  metadataBase: new URL("http://localhost:3000"),
+  title: {
+    default: "BlockPerp — Onchain Perpetual Trading",
+    template: "%s | BlockPerp",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Shadcn Fintech — Finance Dashboard Template",
-    description: "A premium open-source fintech dashboard built with Next.js, shadcn/ui, and Tailwind CSS.",
-    images: ["/screenshots/shadcn-fintech.png"],
-  },
-};
+  description:
+    "Explore onchain perpetual markets, funding rates, positions, and protocol risk with BlockPerp.",
+}
 
 export default function RootLayout({
   children,

@@ -1,120 +1,115 @@
-> [!WARNING]
-> **Security notice: malicious third-party copy**
->
-> The official repository is [abderrahimghazali/shadcn-fintech](https://github.com/abderrahimghazali/shadcn-fintech). A third-party re-upload named `Weebapp003/shadcn-fintech-template` adds dependencies associated with malware, including `oscar-redis` and `oracle-redis`. **Do not install or run that copy.** These packages are not dependencies of the official project.
->
-> See [issue #3](https://github.com/abderrahimghazali/shadcn-fintech/issues/3), the [oscar-redis malware advisory](https://github.com/advisories/GHSA-c6m6-wr2f-6f63), and the [oracle-redis malware advisory](https://osv.dev/vulnerability/MAL-2026-16390) for details. If you installed or ran the malicious copy, treat the machine as potentially compromised and rotate exposed credentials from a clean device. Removing the package alone may not remove the malware.
+# BlockPerp Frontend
 
-<div align="center">
+The frontend application for **BlockPerp**, an onchain perpetual trading and protocol analytics platform.
 
-# Shadcn Fintech
+Built with Next.js, React, TypeScript, Tailwind CSS, and shadcn/ui.
 
-A premium, open-source fintech dashboard built with Next.js, shadcn/ui, and Tailwind CSS.
+## Overview
 
-[![CI](https://github.com/abderrahimghazali/shadcn-fintech/actions/workflows/ci.yml/badge.svg)](https://github.com/abderrahimghazali/shadcn-fintech/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
-[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
-[![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-black)](https://ui.shadcn.com)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-black)](https://tailwindcss.com)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-black)](https://typescriptlang.org)
+BlockPerp provides a dashboard interface for exploring perpetual markets, trading activity, positions, and protocol analytics.
 
-[Live Demo](https://shadcn-fintech.vercel.app) · [Report Bug](https://github.com/abderrahimghazali/shadcn-fintech/issues) · [Request Feature](https://github.com/abderrahimghazali/shadcn-fintech/issues)
+The frontend is being developed incrementally. Dashboard values that use demonstration data are illustrative placeholders and must not be treated as live market data or financial information.
 
-![Shadcn Fintech Dashboard](public/screenshots/shadcn-fintech.png)
+## Features and Pages
 
-</div>
+| Route | Page | Purpose |
+|---|---|---|
+| `/dashboard` | Overview | Dashboard summary and key metrics |
+| `/trade` | Trade | Trading interface |
+| `/positions` | Positions | Position overview |
+| `/activity` | Activity | Trading activity interface |
+| `/analytics` | Protocol Analytics | Protocol-level analytics |
 
-## Features
+Additional routes inherited from the starter template may remain available during development. They will be reviewed as the application evolves.
 
-- **11 fully built pages** — Dashboard, Accounts, Transactions, Transfers, Cards, Crypto, Analytics, Investments, Budgets, Settings, Notifications
-- **Crypto dashboard** — Candlestick chart, live portfolio, trade form, market overview with 8 coins
-- **Drag-and-drop dashboard** — Rearrange widgets with dnd-kit, persisted to localStorage
-- **Interactive credit cards** — 3D flip animation, freeze toggle, virtual card generator
-- **Live investment ticker** — Simulated real-time price updates with flash animations
-- **Spending heatmap** — GitHub-style 365-day calendar visualization
-- **Actionable notifications** — Accept/decline money requests and device authorization inline
-- **Smart analytics** — Category drill-down donuts, recurring charge detector, AI insights
-- **Budget tracking** — Animated SVG progress rings, savings goals, month projection
-- **Quick transfers** — Contact selector with send simulation
-- **Auth pages** — Sign in / sign up with animated 3D globe, powered by [Clerk](https://clerk.com)
-- **Dark mode** — Full dark/light/system theme support
-- **Responsive** — Works on desktop, tablet, and mobile
+## Technology Stack
 
-## Pages
+- **Framework:** Next.js App Router
+- **Language:** TypeScript
+- **UI:** React and shadcn/ui
+- **Styling:** Tailwind CSS v4
+- **Charts:** Recharts
+- **Icons:** Lucide React
+- **Package manager:** pnpm
 
-| Page | Description |
-|------|-------------|
-| `/dashboard` | Financial overview, wallet cards, quick transfer, spending limit, money movement |
-| `/accounts` | Linked bank accounts with balances, add account flow |
-| `/transactions` | Searchable table with filters, expandable rows, bulk CSV export |
-| `/transfers` | Send/receive/scheduled transfers with stats and quick send |
-| `/cards` | 3D flip card, freeze/unfreeze, spending controls, virtual card creator |
-| `/analytics` | Spending heatmap, category breakdown, recurring charges, AI insights |
-| `/crypto` | Candlestick chart, portfolio balance, top coins, trade form, market overview |
-| `/investments` | Portfolio allocation, holdings with sparklines, live ticker, watchlist |
-| `/budgets` | Budget rings, savings goals, spending calendar, month projection |
-| `/settings` | Profile, security, notifications, billing, appearance |
-| `/notifications` | Filterable notification feed with dismiss animations |
-| `/sign-in` | Auth page with animated 3D globe, social login, powered by Clerk |
-| `/sign-up` | Registration with name, email, password, terms acceptance |
+## Prerequisites
 
-## Tech Stack
-
-| | Technology |
-|---|---|
-| Framework | [Next.js 16](https://nextjs.org) (App Router) |
-| UI | [shadcn/ui](https://ui.shadcn.com) |
-| Styling | [Tailwind CSS v4](https://tailwindcss.com) |
-| Charts | [Recharts](https://recharts.org) |
-| Animations | [Motion](https://motion.dev) |
-| Drag & Drop | [@dnd-kit](https://dndkit.com) |
-| Auth | [Clerk](https://clerk.com) |
-| 3D Globe | [three-globe](https://github.com/vasturiano/three-globe) + [Aceternity UI](https://ui.aceternity.com) |
-| Icons | [Lucide React](https://lucide.dev) |
-| Language | TypeScript |
+- Node.js compatible with the project's Next.js dependencies
+- pnpm
+- Git
 
 ## Getting Started
 
+From the repository root:
+
 ```bash
-git clone https://github.com/abderrahimghazali/shadcn-fintech.git
-cd shadcn-fintech
+cd frontend
 pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see the dashboard.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Customization
+Alternatively, from the repository root, use the provided development script:
 
-**Theme** — Edit `src/app/globals.css` to customize colors. Full dark mode support via CSS variables.
+```bash
+./scripts/frontend-dev.sh
+```
 
-**Mock Data** — All demo data lives in `src/data/seed.ts`. Replace with your own data or connect to a real API.
+## Build and Validation
 
-**Dashboard Layout** — Click "Customize" on the dashboard to drag and rearrange widgets. Persists to localStorage.
+From the frontend directory:
 
-## Sponsor this project
+```bash
+pnpm exec tsc --noEmit
+pnpm run lint
+pnpm run build
+```
 
-This project is free and open-source. If it helped you build something, saved you time, or you just think it's cool — consider supporting its development. Your sponsorship helps keep this project maintained, improved, and free for everyone.
+From the repository root, the production build can also be run with:
 
-<a href="https://github.com/sponsors/abderrahimghazali">
-  <img src="https://img.shields.io/badge/Sponsor-GitHub-ea4aaa?logo=github&logoColor=white" alt="Sponsor on GitHub" />
-</a>
-<a href="https://buymeacoffee.com/abderrahimghazali">
-  <img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?logo=buy-me-a-coffee&logoColor=black" alt="Buy Me a Coffee" />
-</a>
+```bash
+./scripts/frontend-build.sh
+```
 
-Every star, share, and contribution also goes a long way. Thank you for your support!
+## Project Structure
+
+```text
+frontend/
+├── src/
+│   ├── app/
+│   │   ├── (dashboard)/
+│   │   │   ├── dashboard/
+│   │   │   ├── trade/
+│   │   │   ├── positions/
+│   │   │   ├── activity/
+│   │   │   └── analytics/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   └── components/
+│       └── blockperp/
+│           └── dashboard-ui.tsx
+├── public/
+└── package.json
+```
+
+The project may contain additional components, routes, and assets not shown in this abbreviated structure.
+
+## Development Guidelines
+
+- Keep shared UI components reusable.
+- Use TypeScript types for component props and data contracts.
+- Clearly distinguish demonstration data from live onchain data.
+- Handle loading, empty, and error states when integrating external data.
+- Keep credentials and private keys out of source control.
+- Store environment-specific configuration in environment variables. Commit only safe example values in `.env.example`.
+
+## Project Status
+
+The frontend foundation and initial dashboard routes have been scaffolded. The application is being developed toward integration with the BlockPerp smart contracts and supporting data services.
+
+Refer to the repository's root `README.md` and `docs/` directory for project-wide setup, architecture, and development workflow documentation.
 
 ## License
 
-Licensed under the [MIT License](LICENSE).
-
-## Author
-
-Created with ❤️ by **[Abderrahim Ghazali](https://github.com/abderrahimghazali)**
-
-Need help getting started or have a question? Feel free to reach out — I'm happy to help.
-
-<a href="https://cal.com/abderrahimghazali/15min?overlayCalendar=true">
-  <img src="https://img.shields.io/badge/Book%20a%20call-Cal.com-292929?logo=cal.com&logoColor=white" alt="Book a call" />
-</a>
+Refer to the repository's root license file for the applicable project license.
