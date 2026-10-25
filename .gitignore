@@ -1,7 +1,7 @@
-@'
 # Dependencies and generated frontend files
 node_modules/
 frontend/node_modules/
+frontend/.next/
 frontend/dist/
 frontend/coverage/
 
@@ -26,4 +26,3 @@ Thumbs.db
 *.log
 npm-debug.log*
 pnpm-debug.log*
-'@ | Set-Content -Path ".gitignore" -Encoding utf8
