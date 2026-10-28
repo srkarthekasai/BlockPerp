@@ -149,37 +149,44 @@ An insurance fund does not guarantee that all potential losses can be covered.
 
 ### Overview Dashboard
 
-![BlockPerp Overview Dashboard](docs/images/overview-dashboard.png)
+![BlockPerp Overview Dashboard](https://drive.google.com/file/d/1ikY0nSsop7L8LG5t36hsUew6o3YTn8Z9/view?usp=drive_link)
+
+![BlockPerp Overview Dashboard](https://drive.google.com/file/d/1jG3T1KzZYUoIJ9vtAeE0V7na1Spg2KUh/view?usp=drive_link)
+
 
 *Overview of market information, account balances, and protocol statistics.*
 
 ### Trading Terminal
 
-![BlockPerp Trading Terminal](docs/images/trading-terminal.png)
+![BlockPerp Trading Terminal](https://drive.google.com/file/d/19uKBdC4Np26htcKQn-AjWGustOKf1kaZ/view?usp=drive_link)
 
 *Interface for selecting a trading direction, configuring leverage, and reviewing position estimates.*
 
 ### Positions Dashboard
 
-![BlockPerp Positions Dashboard](docs/images/positions-dashboard.png)
+![BlockPerp Positions Dashboard](https://drive.google.com/file/d/12Ghucu7BcSMAhXrzMElE4kmXSv6dh4dz/view?usp=drive_link)
 
 *Position monitoring with entry prices, unrealized PnL, and margin information.*
 
+### Activity Dashboard
+
+![BlockPerp Activity Dashboard](https://drive.google.com/file/d/16ySxFOHClmkLoJ2GLW52YPzl6oEUhW-w/view?usp=drive_link)
+
+*Transparent tracking of trades, collateral deposits, and funding settlements with transaction statuses and timestamps.*
+
 ### Protocol Analysis
 
-![BlockPerp Protocol Analysis](docs/images/protocol-analysis.png)
+![BlockPerp Protocol Analysis](https://drive.google.com/file/d/1Z-hN9eZrzqZg9wKrR3Lc2eK2t69WskNF/view?usp=drive_link)
+
+![BlockPerp Protocol Analysis](https://drive.google.com/file/d/1E6y6VzicJ1hT3bv6eUcN7JCdxO8Ianz_/view?usp=drive_link)
 
 *Protocol analytics covering market statistics, funding information, and onchain activity.*
 
 ### Product Demo Video
 
-**[Insert BlockPerp demo video here]**
+[![Watch Project Demo](https://drive.google.com/file/d/18L68U0HjFstZoaDJjkg9MRnoqEUtNn4t/view?usp=drive_link)](https://drive.google.com/file/d/1YwMdftb_0bht5299emINvd_15K4fJCss/view?usp=drive_link)
 
 The demonstration covers the dashboard, wallet connectivity, collateral management, trading interface, positions, activity, and protocol analytics.
-
-### Hackathon Pitch Video
-
-**[Insert BlockPerp pitch video here]**
 
 ---
 
