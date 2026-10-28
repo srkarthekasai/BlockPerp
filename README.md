@@ -29,7 +29,7 @@ The project focuses on bringing essential trading operations and risk informatio
 
 BlockPerp is designed around virtual automated market maker (vAMM) pricing, isolated-margin accounting, funding-rate calculations, oracle integration, liquidation mechanisms, and insurance-fund management.
 
-The frontend is deployed using Netlify.
+The frontend is deployed using Render.
 
 ## Problem Statement
 
@@ -276,7 +276,7 @@ The diagram represents the protocol's logical design; the exact contract boundar
 | viem | Blockchain clients and contract interactions |
 | Recharts | Charts and data visualization |
 | Git and GitHub | Version control and collaboration |
-| Netlify | Frontend hosting |
+| Render | Frontend hosting |
 
 ## Smart Contract Architecture
 
@@ -574,7 +574,7 @@ forge coverage
 
 ### Frontend
 
-The BlockPerp frontend is deployed using **Netlify**.
+The BlockPerp frontend is deployed using **Render**.
 
 ### Smart Contracts
 
@@ -605,7 +605,7 @@ Potential improvements include additional markets, enhanced historical analytics
 ### Project Links
 
 - [GitHub Repository](https://github.com/srkarthekasai/BlockPerp)
-- Frontend hosting: Netlify
+- Frontend hosting: Render
 
 ---
 
